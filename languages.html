@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Popular Programming Languages</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="overview.html">Overview</a></li>
+                <li><a href="languages.html">Languages</a></li>
+                <li><a href="techniques.html">Techniques</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="blog.html">Blog</a></li>
+            </ul>
+        </nav>
+        <h1>Popular Programming Languages</h1>
+    </header>
+
+    <div class="dropdown">
+        <button onclick="toggleContent('python')">Python</button>
+        <button onclick="toggleContent('javascript')">JavaScript</button>
+        <button onclick="toggleContent('java')">Java</button>
+    </div>
+
+    <main>
+        <div class="content-container languages-page">
+
+            <div class="language-column" id="python">
+                <section>
+                    <div class="logo">
+                        <img src="pythonlogo.png" alt="Python Logo" class="logo" style="width: 150px; height: auto;">
+                    </div>
+                    <h2>Python</h2>
+                    
+                        <h3>History and Background</h3>
+                        <p>Python was created by Guido van Rossum and first released in 1991.</p>
+                        <p>It was designed with an emphasis on code readability and has a clean and easy-to-understand syntax.</p>
+                    <h3>Syntax and Core Features</h3>
+                    <p>Python uses indentation to define code blocks and relies on a clear and concise syntax. It supports both procedural and object-oriented programming paradigms. Core features include dynamic typing, garbage collection, and a vast standard library.</p>
+                    <h3>Use Cases</h3>
+                    <p>Python is used in various domains, including web development (Django, Flask), data analysis (NumPy, pandas), machine learning (TensorFlow, scikit-learn), and automation scripting.</p>
+                    <h3>Examples of Advanced Projects</h3>
+                    <p>Development of complex web applications like Instagram (Django).</p>
+                    <p>Training deep learning models for image recognition (TensorFlow).</p>
+                
+                    <h3>Pros</h3>
+                    
+                        <p>Readability and clean syntax.</p>
+                        <p>Large and active community.</p>
+                        <p>Extensive libraries for various purposes.</p>
+                    
+                    <h3>Cons</h3>
+                    
+                       <p>Slower execution speed compared to low-level languages like C++.</p>
+                        <p>Global Interpreter Lock (GIL) can limit multithreading performance.</p>
+                    
+                </section>
+            </div>
+
+            <div class="language-column" id="javascript">
+                <section>
+                    <div class="logo">
+                        <img src="javascriptlogo.png" alt="JavaScript Logo" class="logo" style="width: 200px; height: auto;">
+                    </div>
+                    <h2>JavaScript</h2>
+                    <h3>History and Background</h3>
+                    <p>JavaScript, often abbreviated as JS, was created by Brendan Eich and first released in 1995. It is a high-level, interpreted programming language primarily used for adding interactivity to web pages.</p>
+                    <h3>Syntax and Core Features</h3>
+                    <p>JavaScript has a C-style syntax and supports both procedural and object-oriented programming. It is known for its use in web development, enabling client-side scripting for web browsers. It also has event-driven and asynchronous features.</p>
+                    <h3>Use Cases</h3>
+                    <p>JavaScript is widely used for building dynamic and interactive web applications. It is a fundamental technology for front-end development and is often used with HTML and CSS to create modern web experiences.</p>
+                    <h3>Examples of Advanced Projects</h3>
+                    <p> Building single-page applications (SPAs) using frameworks like React and Angular.</p>
+                    <p>Creating real-time web applications with Node.js for server-side scripting.</p>
+                    <h3>Pros</h3>
+                    <p>Ubiquitous in web development.</p>
+                    <p>Support for asynchronous programming.</p>
+                    <p>Large ecosystem of libraries and frameworks.</p>
+                    <h3>Cons</h3>
+                    <p>Can be prone to browser compatibility issues.
+                    <p>Single-threaded nature can lead to performance bottlenecks.
+                </section>
+            </div>
+
+            <div class="language-column" id="java">
+                <section>
+                    <div class="logo">
+                        <img src="javalogo.png" alt="Java Logo" class="logo">
+                    </div>
+                    <h2>Java</h2>
+                    <h3>History and Background</h3>
+                    <p>Java, developed by James Gosling at Sun Microsystems, was first released in 1995. It is a versatile, object-oriented programming language known for its "write once, run anywhere" capability, thanks to the Java Virtual Machine (JVM).</p>
+                    <h3>Syntax and Core Features</h3>
+                    <p>Java features a C++-inspired syntax and is designed for portability and platform independence. It emphasizes strong typing, automatic memory management (garbage collection), and a rich standard library. It is widely used in enterprise software development.</p>
+                    <h3>Use Cases</h3>
+                    <p>Java is used in a wide range of applications, including web development (Java EE), Android app development, enterprise software (Java SE), and large-scale distributed systems. It's also popular in the financial industry.</p>
+                    <h3>Examples of Advanced Projects</h3>
+                        <p>Building Android mobile apps using Java.</p>
+                        <p>Developing backend systems for e-commerce platforms.</p>
+                    
+                    <h3>Pros</h3>
+                        <p>Platform independence via the JVM.</p>
+                        <p>Strong community and extensive libraries.</p>
+                        <p>Robust and reliable for critical applications.</p>
+                    <h3>Cons</h3>
+                    
+                        <p>Verbose syntax compared to some modern languages.</p>
+                        <p>Slower startup times compared to natively compiled languages.</p>
+                
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        function toggleContent(language) {
+            const element = document.getElementById(language);
+            if (element.style.display === "block") {
+                element.style.display = "none";
+            } else {
+                element.style.display = "block";
+            }
+        }
+    </script>
+
+    <footer>
+        &copy; 2023 Justice League-1221107786-1221109059-1221106808
+    </footer>
+</body>
+</html>
